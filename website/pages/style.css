@@ -1,0 +1,44 @@
+/*  אורך ורוחב של תמונות  */
+.img{
+    width: px;
+    height: px;
+     gap: 20px;
+      justify-content: center;
+      margin: 20px;
+}
+/* אורך ורוחב של כפתורים שמעבירים בין העמודים */
+.button{
+    width: px;
+    height: px;
+}
+.buttonDiv{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px; 
+}
+/* הודעה ביוצאת מתמונות */
+.custom-alert {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: p;
+  color:p;
+  padding: 80px 70px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+  display: none;
+  text-align: center;
+}
+
+.custom-alert button {
+  margin-top: 15px;
+  background-color:p;
+  color:p;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+}

@@ -1,0 +1,57 @@
+
+.heart-container {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+}
+
+.heart {
+  position: relative;
+  width: 200px;
+  height: 180px;
+  background: red;
+  transform: rotate(-50deg);
+  margin: 0 auto;
+}
+/* אורך ורוחב צריכים להיות שויים. כלומר עם כתבת 
+.heart
+width: 200px;
+  height: 180px;
+ אז ב
+.heart::before,
+.heart::after 
+  איפה שכתוב אורך ורוחב צריכם להיות אותם פרמטרים 
+   width: 200px;
+  height: 180px;
+  אחרת זה לא היה כל כך לב
+*/
+.heart::before,
+.heart::after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 180px;
+  background: red;
+  border-radius: 50%;
+}
+
+.heart::before {
+  top: -100px;
+  left: 0;
+}
+
+.heart::after {
+  left: 100px;
+  top: 0;
+}
+
+/* הטקסט בתוך הלב */
+.heart-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}

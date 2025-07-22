@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>ending page of the book</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="heart.css">
+</head>
+<body>
+    <div class="heart-container">
+  <div class="heart">
+    <!-- תוסיפי טקסט -->
+    <span class="heart-text"></span>
+  </div>
+</div>
+
+    <div class="buttonDiv">
+    <button id="finishButton" class="button"><-</button> 
+    </div> 
+</body>
+<script>
+    document.getElementById("finishButton").addEventListener("click", function() {
+        window.location.href = "picturePage.html";
+    });
+</script>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>picture page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <div id="pictureConteiner"></div>
+
+     <div id="custom-alert" class="custom-alert">
+    <p id="alert-text"></p>
+    <button onclick="closeCustomAlert()">close</button>
+  </div>
+   <div class="buttonDiv">
+    <button id="prevButton" class="button"><-</button>
+    <button id="nextButton" class="button">-></button>
+    </div>
+</body>
+<script>
+    document.getElementById("nextButton").addEventListener("click", function() {
+        window.location.href = "endingPage.html";
+    });
+
+    document.getElementById("prevButton").addEventListener("click", function() {
+        window.location.href = "firstPage.html";
+    });
+</script>
+<script type="module" src="picturePage.js"></script>
+</html>
