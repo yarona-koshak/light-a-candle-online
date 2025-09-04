@@ -7,13 +7,54 @@
     body {
       background-color: rgb(247, 244, 244);
     }
+    .radio-button {
+      background-color: white;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      padding: 10px 20px;
+      margin: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s, border-color 0.3s;
+    }
   </style>
 </head>
 <body>
     <h1>Donate to light a candle online</h1>
-  <ul>
-    <li><input type="text"></li>
-  </ul>
+    <div class="donateContainer">
+      <h2>Donation Amount</h2>
+      <section>
+     <table>
+      <tr>
+        <td><button class="radio-button" value="$1"> <label for="price"><span>$1</span></label></button></td>
+        <td><button class="radio-button" value="$5"> <label for="price"><span>$5</span></label></button></td>
+        <td><button class="radio-button" value="$10"> <label for="price"><span>$10</span></label></button></td>
+        <td><button class="radio-button" value="$20"> <label for="price"><span>$20</span></label></button></td>
+        <td><button class="radio-button" value="$50"> <label for="price"><span>$50</span></label></button></td>
+        <td><button class="radio-button" value="$100"> <label for="price"><span>$100</span></label></button></td>  
+      </tr>
+    </table>
+      </section>
+      <h2>Payment Method</h2>
+      <section>
+        <table>
+          <tr>
+            <td><button class="radio-button" value="creditCard"> <label for="payment"><span>Credit Card</span></label></button></td>
+            <td><button class="radio-button" value="paypal"> <label for="payment"><span>PayPal</span></label></button></td>
+            <td><button class="radio-button" value="bankTransfer"> <label for="payment"><span>Bank Transfer</span></label></button></td>
+          </tr>
+        </table>
+        <div>First Name</div>
+        <input type="text" id="firstName" name="firstName" required>
+        <div>Last Name</div>
+        <input type="text" id="lastName" name="lastName" required>
+        <div>Email</div>
+        <input type="email" id="email" name="email" required>
+        <div>Phone Number</div> 
+        <input type="tel" id="phone" name="phone">
+      </section>
+ 
+     
 
 </body>
 </html>
