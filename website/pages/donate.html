@@ -5,7 +5,11 @@
   <title>donate to light</title>
 <style>
     body {
-      background-color: rgb(247, 244, 244);
+    background-color: rgb(247, 244, 244);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
     }
     .radio-button {
       background-color: white;
@@ -17,12 +21,44 @@
       font-size: 16px;
       transition: background-color 0.3s, border-color 0.3s;
     }
+    .donateContainer{
+      background-color: white;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      padding: 20px;
+      margin: 20px;
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+              display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    #donateButton{
+      width:200px;
+      height: 50px;
+      border: none;
+      border-radius: 5px;
+      background-color: #4CAF50;
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .span{
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    #paymentSection{
+    
+    }
   </style>
 </head>
 <body>
     <h1>Donate to light a candle online</h1>
     <div class="donateContainer">
-      <h2>Donation Amount</h2>
+      <h2 id="h2">Donation Amount</h2>
       <section>
      <table>
       <tr>
@@ -36,7 +72,7 @@
     </table>
       </section>
       <h2>Payment Method</h2>
-      <section>
+      <section id="paymentSection">
         <table>
           <tr>
             <td><button class="radio-button" value="creditCard"> <label for="payment"><span>Credit Card</span></label></button></td>
@@ -44,17 +80,23 @@
             <td><button class="radio-button" value="bankTransfer"> <label for="payment"><span>Bank Transfer</span></label></button></td>
           </tr>
         </table>
-        <div>First Name</div>
-        <input type="text" id="firstName" name="firstName" required>
-        <div>Last Name</div>
-        <input type="text" id="lastName" name="lastName" required>
-        <div>Email</div>
-        <input type="email" id="email" name="email" required>
-        <div>Phone Number</div> 
-        <input type="tel" id="phone" name="phone">
+      <table>
+        <tr>
+          <td><span class="span">First Name</span>
+        <input type="text" id="firstName" name="firstName" required></td>
+        <td><span class="span">Last Name</span >
+        <input type="text" id="lastName" name="lastName" required></td>
+        </tr>
+        <tr>
+          <td> <span class="span">Email</span>
+        <input type="email" id="email" name="email" required></td>
+        <td> <span class="span">Phone Number</span> 
+        <input type="tel" id="phone" name="phone"></td>
+        </tr>
+      </table>
       </section>
- 
-     
+    </div>
+      <button id="donateButton">Donate Now</button>
 
 </body>
 </html>
